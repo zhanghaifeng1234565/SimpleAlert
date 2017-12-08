@@ -141,6 +141,7 @@ const CGFloat vHeight = 40;
     if (_cancelBtn==nil) {
         _cancelBtn = [[UIButton alloc] init];
         [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [_cancelBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_cancelBtn addTarget:self action:@selector(cancelBtnClick:) forControlEvents:UIControlEventTouchDown];
     }
