@@ -188,7 +188,7 @@ const CGFloat vHeight = 40;
     self.titleLabelScrollView.frame = CGRectMake(15, 15, self.alertBgView.frame.size.width-30, titleLableScrollViewHeight);
     self.titleLabel.frame = CGRectMake(0, 0, self.titleLabelScrollView.frame.size.width, titleLabelHeight);
     self.hLine.frame = CGRectMake(0, self.alertBgView.frame.size.height-vHeight, self.alertBgView.frame.size.width, 0.5);
-    self.vLine.frame = CGRectMake((self.alertBgView.frame.size.width-0.5)/2, self.alertBgView.frame.size.height-30, 0.5, vHeight);
+    self.vLine.frame = CGRectMake((self.alertBgView.frame.size.width-0.5)/2, self.alertBgView.frame.size.height-vHeight, 0.5, vHeight);
     self.cancelBtn.frame = CGRectMake(self.hLine.frame.origin.x, self.hLine.frame.size.height+self.hLine.frame.origin.y, self.vLine.frame.origin.x, vHeight);
     self.sureBtn.frame = CGRectMake(self.vLine.frame.origin.x+self.vLine.frame.size.width, self.hLine.frame.size.height+self.hLine.frame.origin.y, self.vLine.frame.origin.x, vHeight);
     
